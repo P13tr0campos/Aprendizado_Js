@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    background-color: aquamarine;
+}
+.wrapper {
+    background-color: aliceblue;
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    transform: translate(-50%, -40%);
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    border: aliceblue;
+    border-radius: 8px;
+}
+.resultado{
+    padding-bottom: 5%;
+    position: absolute;
+    transform: translate(-10%, -50%);
+    top: -6%;
+    right: 20%;
+    background-color: aquamarine;
+    border-radius: 16px;
+    border: 1px rgb(0, 0, 0) solid;
+    width: 50%;
+
+}
+.rponto{
+    font-size: 24px;
+    padding: 1,5%;
+    text-align: center;
+    background-color: aquamarine;
+}
+.Jogo{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(37, 37, 37);
+    border-radius: 8%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+}
+.cores{
+    width: 210px;
+    height: 210px;
+    position: absolute;
+    cursor: pointer;
+}
+.cor1{
+    background-color: #006400;
+    border-radius: 10px;
+    bottom: 30px;
+    left: 30px;
+}
+.cor2{
+ background-color: #800008;
+ border-radius: 10px;
+ top: 30px;
+ left: 30px;
+}
+.cor3{
+ background-color: #0808b8;
+ border-radius: 10px;
+ top: 30px;
+ right: 30px;
+}
+.cor4{
+ background-color: #808000;
+ border-radius: 10px;
+ bottom: 30px;
+ right: 30px;
+}
+.Jogo::before{
+    position: absolute;
+    content: "";
+    background-color: rgb(26, 26, 26);
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+}
+.pontuacao{
+    background-color: aliceblue;
+    font-size: 24px;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    right: 50%;
+    bottom: 50%;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    border-radius: 16px;
+}
+.container{
+    background-color: aquamarine;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    align-items: center;
+}
+.hide{
+    display: none;
+}
+.container button{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    align-items:center ;
+    border-radius: 20px;
+    margin-top: 40%;
+    transition: 2s;
+}
+.botao{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px 20px;
+    background:  white;
+}
+.botao:hover{
+    padding: 20px 30px;
+    background:  rgba(0, 255, 8, 0.397);
+
+}
+.container p{
+    font-weight: 600;
+}
